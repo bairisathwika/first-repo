@@ -32,4 +32,13 @@ You can also embed plots, for example:
 plot(pressure)
 ```
 
+```{r}
+wk2_stocks <- readRDS("wk2_stocks.rds")
+df = wk2_stocks
+sum(df$SPY_returns)
+mean(df$SPY_returns)
+sd(df$SPY_returns)
+```
+
+
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

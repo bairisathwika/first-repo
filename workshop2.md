@@ -34,5 +34,25 @@ You can also embed plots, for example:
 
 ![](workshop2_files/figure-gfm/pressure-1.png)<!-- -->
 
+``` r
+wk2_stocks <- readRDS("wk2_stocks.rds")
+df = wk2_stocks
+sum(df$SPY_returns)
+```
+
+    ## [1] 2.183304
+
+``` r
+mean(df$SPY_returns)
+```
+
+    ## [1] 0.0003765616
+
+``` r
+sd(df$SPY_returns)
+```
+
+    ## [1] 0.01221943
+
 Note that the `echo = FALSE` parameter was added to the code chunk to
 prevent printing of the R code that generated the plot.
